@@ -25,4 +25,4 @@ The task at hand is this: Insert the numbers 0 - N into random positions in a da
 
 You can see that avl_array quickly overtakes vector despite its poor cache behaviour and btree_array scales without sacraficing cache efficiency.
 
-If you would like to run the benchmarks yourself, checkout this repository and type "make run"
+If you would like to run the benchmarks yourself, clone this repository and type "make run"
