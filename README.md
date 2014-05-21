@@ -10,7 +10,7 @@ To show that runtime complexity and cache efficiency are orthoganal, I have sele
 **logarithmic** | avl_array              | btree_array         |
 
 
-The task at hand is this: Insert the numbers 0 - N into random positions in a data structure. Below are the timings for different values of N.
+The task at hand is this: Insert the numbers 0 - N into random positions in a sequence. Below are the timings for different values of N.
 
               | **list**      | **vector**    | **avl_array**   | **btree_array** |
 --------------|--------------:|--------------:|----------------:|----------------:|
