@@ -1,1 +1,3 @@
-bench_vector bench_avl_array bench_btree_array
+bench_vector
+bench_avl_array
+bench_btree_array
