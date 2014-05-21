@@ -10,16 +10,14 @@ void bench(int argc, char * * argv)
 {
 	std::size_t count = std::atoi(argv[1]);
 	std::mt19937_64 engine;
-	std::uniform_int_distribution<std::uint64_t> num_dist;
 	Seq<std::uint64_t> nums;
 
-	// Insert count random integers
+	// Insert count integers randomly
 	for (std::size_t i = 0; i != count; ++i)
 	{
-		std::uniform_int_distribution<std::size_t> index_dist(0, nums.size());
-		auto index = index_dist(engine);
-		auto num = num_dist(engine);
-		nums.insert(index, num);
+		std::uniform_int_distribution<std::size_t> dist(0, nums.size());
+		auto index = dist(engine);
+		nums.insert(index, i);
 	}
 
 	// Run a checksum to verify result
