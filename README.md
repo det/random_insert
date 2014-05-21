@@ -4,7 +4,7 @@ It's also misleading to talk about caches because you usually dont have to give 
 
 To show that runtime complexity and cache efficiency are orthoganal, I have selected a problem similar to what Bjarne used and benchmarked it against 4 different data structures. I use std::vector and std::list from the standard library and also 2 non-standard classes. First I use [avl_array](http://avl-array.sourceforge.net/), which is an avl tree that offers logarithmic insert at an arbitrary index as well stable iterators but poor cache efficiency. Next I use a b+tree class that I wrote which offers logarithmic insertion at an arbitrary index as well as good cache efficiency but can not provide stable iterators. Below is a table showing some of the properties of each data structure.
 
-                | **cache innefficient** | **cache efficient** |
+                | **cache inefficient** | **cache efficient** |
 ----------------|:----------------------:|:-------------------:|
 **linear**      | list                   | vector              |
 **logarithmic** | avl_array              | btree_array         |
